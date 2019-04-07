@@ -18,7 +18,7 @@ export default function Header() {
           <div>
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <Link to="/home" className="nav-link">
+                <Link to="/" className="nav-link">
                   <i className="fas fa-home" />
                   {"  "}
                   Home
