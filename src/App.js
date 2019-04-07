@@ -3,7 +3,7 @@ import { Provider } from "./Context";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./components/accountMan/Login";
 import SignUp from "./components/accountMan/SignUp";
-
+import Home from "./components/pages/home/Home";
 import Header from "./components/layout/Header";
 
 import "./App.css";
@@ -18,6 +18,7 @@ class App extends Component {
             <Header />
             <div className="container">
               <Switch>
+                <Route exact path="/home" component={Home} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={SignUp} />
               </Switch>
