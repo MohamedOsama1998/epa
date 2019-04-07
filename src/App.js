@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Provider } from "./Context";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import Login from "./components/accountMan/Login";
+import SignUp from "./components/accountMan/SignUp";
 
 import Header from "./components/layout/Header";
 
@@ -14,10 +16,12 @@ class App extends Component {
         <Router>
           <div className="App">
             <Header />
-            <Switch>
-              {/* <Route exact path="/" component={} />
-              <Route exact path="/login" component={} /> */}
-            </Switch>
+            <div className="container">
+              <Switch>
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/signup" component={SignUp} />
+              </Switch>
+            </div>
           </div>
         </Router>
       </Provider>
